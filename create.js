@@ -28,7 +28,7 @@ globalThis.htmlHeader = '<p style="font-size: 31pt;">'+header+'</p>';
 
 globalThis.htmlOne = "<!DOCTYPE html><html><head><title>"+title+"</title><link rel=\"shortcut icon\" type=\"image/"+faviconType+"\" href=\""+favicon+"\"><style>";
 console.log(htmlOne);
-htmlTwo = htmlOne+cssThree+"</style><script>"+jsThree+"</script></head><body>"+htmlHeader+'<p id="output"></p><div class="main-footer"><p>Made with <a href="https://kpoovakan.github.io/spoofmaker">Spoof Maker</a>.</p></div></body></html>';
+globalThis.htmlTwo = htmlOne+cssThree+"</style><script>"+jsThree+"</script></head><body>"+htmlHeader+'<p id="output"></p><div class="main-footer"><p>Made with <a href="https://kpoovakan.github.io/spoofmaker">Spoof Maker</a>.</p></div></body></html>';
 console.log(htmlTwo);
 
 
