@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Spoof Maker | kpoovakan</title>
+<link rel="shortcut icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=LXGW+WenKai+Mono+TC:wght@400;700&display=swap" rel="stylesheet">
+<script src="script.js"></script>
+</head>
+
+<body>
+<p><span class="title">Spoof Maker</span>
+<span class="info">created by <a href="https://kpoovakan.github.io">kpoovakan</a>
+</br>view <a href="https://kpoovakan.github.io?section=spoof">premade spoofs</a>
+</br><a href="github.com/kpoovakan/spoofmaker/blob/main/LICENSE">licensing</a> information</span></p>
+<p id="checkJavaScript">JavaScript must be enabled for this page to work properly.</p>
+
+
+<p class="heading">page style</p>
+<input type="color" id="background" class="input" onchange="setColors()" value="#696969"></input><p class="input">background color</p>
+<input type="color" id="foreground" class="input" onchange="setColors()" value="#7cfc00"></input><p class="input">foreground color</p>
+</br><label for="fontType">font type: </label><select id="fontType" class="input" onchange="fontSelection()">
+<option value="" disabled selected hidden>select font type</option><option value="serif">serif</option><option value="sans">sans-serif</option><option value="monospace">monospace</option><option value="decorative">decorative</option></select>
+<label for="fontName">font: </label><select id="fontName" class="input" onchange="setFonts()"><option value="" disabled selected hidden>select a font type first!</option></select>
+
+<p class="heading">page customizaion</p>
+<input id="pageFavicon" class="input" placeholder="enter image URL with https" onchange="setCustomization()"></input><p class="input">favicon image (logo on the tab)</p><select id="faviconType" class="input" onchange="setCustomization()"><option value="" disabled selected hidden>image type</option><option value="png">.png</option><option value="jpeg">.jpeg/.jpg</option><option value="svg">.svg</option></select>
+</br><input id="pageTitle" class="input" placeholder="enter text" onchange="setCustomization()"></input><p class="input">page title (the text on the tab)</p>
+</br><input id="pageHeader" class="input" placeholder="text OR https image URL" onchange="setCustomization()"></input><p class="input">page header (at the top of the page)</p>
+</br><input id="pageDescription" class="input" placeholder="enter text" onchange="setCustomization()"></input><p class="input">optional description (shown under the header)</p>
+
+<p class="heading">page buttons</p>
+<p class="input">button style<button class="buttonOne" id="buttonOne" onclick="buttonOne()">press to select</button><button class="buttonTwo" id="buttonTwo" onclick="buttonTwo()">press to select</button></p>
+</br><input id="buttonText" class="input" value="play now" onchange="setButtons()"></input><p class="input">button text</p>
+</br><label for="videoStyle">button result: </label><select id="videoStyle" class="input" onchange="setButtons()">
+<option value="" disabled selected hidden>select video style</option><option value="embed">embed</option><option value="redirect">redirect</option></select>
+
+<p><span class="heading" style="margin-bottom: 0px;">page download</span><span class="info" style="margin-top: 31px;"><a href="javascript:void(0);" onclick="createHTML()">download HTML file</a></span></p>
+<script src="create.js"></script>
+
+<!-- <input id="input"></input><button onclick="success()">go!</button>
+<p id="output"></p> -->
+</body>
+</html>
