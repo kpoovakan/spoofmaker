@@ -1,5 +1,6 @@
 # Spoof Maker
-Create and customize your own Spoofs. Edit colors, fonts, images, and more! Finished Spoofs can be downloaded as a .html file.
+Create and customize your own Spoofs. Edit colors, fonts, images, and more!
+You can download finished Spoofs as a .html file, or view premade spoofs <a href="https://kpoovakan.github.io/?section=spoof">here</a>.
 You can access this program <a href="https://kpoovakan.github.io/spoofmaker">here</a>.
 We are not affiliated with or endorsed by Google and/or YouTube in any way.
 
