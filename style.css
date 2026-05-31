@@ -86,9 +86,10 @@ border: 3px solid var(--background);
 }
 
 .buttonBackground {
+  display: inline-block;
   background-color: var(--background);
   padding: 13px;
-  margin: 0 13px;
+  margin: 5px 13px;
   border: 3px solid whiteSmoke;
 }
 
