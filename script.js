@@ -26,9 +26,9 @@ function fontPreview() {
 if (fontType == "serif") {
 document.getElementById("fontPreview").innerHTML = `<p class="input"><span style="font-family: Times New Roman;">Times New Roman </span><span style="font-family: Georgia;">Georgia </span><span style="font-family: Garamond;">Garamond</span></p>`;
 } else if (fontType == "sans") {
-document.getElementById("fontPreview").innerHTML = `<p class="input><span style="font-family: Arial;">Arial </span><span style="font-family: Verdana;">Verdana </span><span style="font-family: Helvetica;">Helvetica</span></p>`;
+document.getElementById("fontPreview").innerHTML = `<p class="input"><span style="font-family: Arial;">Arial </span><span style="font-family: Verdana;">Verdana </span><span style="font-family: Helvetica;">Helvetica</span></p>`;
 } else if (fontType == "monospace") {
-document.getElementById("fontPreview").innerHTML = `<p class="input><span style="font-family: Courier New;">this is Courier</span></p>`;
+document.getElementById("fontPreview").innerHTML = `<p class="input"><span style="font-family: Courier New;">this is Courier</span></p>`;
 } else if (fontType == "decorative") {
 document.getElementById("fontPreview").innerHTML = `<p class="input><span style="font-family: Comic Sans;">Comic Sans </span><span style="font-family: Brush Script MT;">Brush Script MT </span><span style="font-family: Lucida Handwriting;">Lucida Handwriting </span><span style="font-family: Papyrus;">Papyrus</span></p>`;
 }}
