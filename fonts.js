@@ -16,3 +16,15 @@ function googly() {
   </br><div class="preview" id="fontGooglyPreview">font preview will appear here...</div>
   `;
 }
+
+function fontGooglyCheck() {
+  var fontGooglyName = document.getElementById("fontGoogly").value;
+  var fontGooglyNamePlus = fontGooglyName.replaceAll(" ", "+");
+  var fontGooglyLink = "https://fonts.googleapis.com/css?family="+fontGooglyNamePlus;
+  console.log(fontGooglyLink);
+  var fontGooglyElement = '<link href="'+fontGooglyLink+'"rel="stylesheet">';
+  console.log(fontGooglyElement);
+  document.head.innerHTML+= fontGooglyElement;
+  var fontGooglyPreview = '<p style="font-family:'+fontGooglyName+';">Everyday, I see the quick brown fox jump over the lazy dog.</p>';
+  document.getElementById("fontGooglyPreview").innerHTML= fontGooglyPreview;
+}
