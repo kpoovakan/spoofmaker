@@ -23,7 +23,7 @@ document.getElementById("fontName").innerHTML = `<option value="" disabled selec
 document.getElementById("fontName").innerHTML = `<option value="" disabled selected hidden>select font</option><option value="Courier New">Courier</option>`;
 } else if (fontType == "decorative") {
 document.getElementById("fontName").innerHTML = `<option value="" disabled selected hidden>select font</option><option value="Comic Sans MS">Comic Sans</option><option value="Brush Script MT">Brush Script MT</option><option value="Lucida Handwriting">Lucida Handwriting</option><option value="Papyrus">Papyrus</option>`;
-} fontPreview(); }
+} fontSystemPreview(); }
 
 function fontSystemPreview() {
 if (fontType == "serif") {
