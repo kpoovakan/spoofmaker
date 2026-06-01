@@ -1,7 +1,7 @@
 "use strict";
 
 function createHTML() {
-
+detectGooglyFonts();
 globalThis.cssOne = ":root{--background:"+background+";--foreground:"+foreground+";--font:\""+fontName+"\";}";
 console.log(cssOne);
 globalThis.cssTwo = 'body{background-color:var(--background);color:var(--foreground);width:700px;margin:0 auto;a:link,a:visited{color:var(--foreground);text-decoration:none;font-weight:700}a:hover{color:var(--foreground);text-decoration:none;font-weight:700;cursor:pointer}font-family:var(--font);font-weight:400;font-style:normal;font-size:13pt;text-align:justify}.main-buttonOne{font-family:var(--font);font-weight:500;font-style:normal;background-color:var(--foreground);color:var(--background);width:314px;display:block;margin:0 auto;border-radius:13px;text-align:center;font-size:25pt;border-style:solid;border-width:5px;border-color:var(--foreground)}.main-buttonOne:hover{cursor:pointer;border-color:var(--foreground);border-style:solid;border-width:5px;color:var(--foreground);background-color:var(--background)}.main-buttonTwo{font-family:var(--font);font-weight:500;font-style:normal;background-color:var(--background);color:var(--foreground);width:314px;display:block;margin:0 auto;border-radius:13px;text-align:center;font-size:25pt;border-style:solid;border-width:5px;border-color:var(--foreground)}.main-buttonTwo:hover{cursor:pointer;border-color:var(--background);border-style:solid;border-width:5px;color:var(--background);background-color:var(--foreground)}.main-footer{position:fixed;bottom:0;font-size:13pt}.main-picture{width:700px;height:395px;overflow:hidden;position:relative;border-radius:13px}.main-picture iframe{position:absolute;top:-50px;left:-2px;width:704px;height:395px;pointer-events:none;border-radius:13px}';
@@ -24,7 +24,7 @@ globalThis.htmlHeader = "<img src=\""+header+"\" width=\"700px\"/>"
 globalThis.htmlHeader = '<p style="font-size: 31pt;">'+header+'</p>';
 }
 
-globalThis.htmlOne = "<!DOCTYPE html><html><head><title>"+title+"</title><link rel=\"preconnect\" href=\"https://fonts.googleapis.com\"><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin><link rel=\"shortcut icon\" type=\"image/"+faviconType+"\" href=\""+favicon+"\"><style>";
+globalThis.htmlOne = "<!DOCTYPE html><html><head><title>"+title+"</title><link rel=\"preconnect\" href=\"https://fonts.googleapis.com\"><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin><link rel=\"shortcut icon\" type=\"image/"+faviconType+"\" href=\""+favicon+"\">"+fontCollectionElement+"<style>";
 console.log(htmlOne);
 globalThis.htmlTwo = htmlOne+cssThree+"</style><script>"+jsThree+"</script></head><body>"+htmlHeader+'<p>'+description+'</p>'+'<p id="output"></p><div class="main-footer"><p>Made with <a href="https://kpoovakan.github.io/spoofmaker">Spoof Maker</a>.</p></div></body></html>';
 console.log(htmlTwo);
@@ -42,7 +42,7 @@ URL.revokeObjectURL(url);
 }
 
 function checkHTML() {
-if (document.getElementById("fontName").value == "") {
+if (fontName == "") {
 alert("please select font");
 } else if (document.getElementById("pageFavicon").value == "") {
 alert("please enter favicon URL");
@@ -100,3 +100,13 @@ const root = document.documentElement;
 globalThis.fontName = document.getElementById("fontGoogly").value;
 root.style.setProperty("--font", fontName);
 }
+function detectGooglyFonts() {
+var selected = document.getElementById("fontCollection").value;
+var fontNamePlus = fontName.replaceAll(" ", "+");
+if (selected == "fontGoogly") {
+globalThis.fontCollectionElement = "https://fonts.googleapis.com/css?family="+fontNamePlus;
+} else if (selected == "fontSystem") {
+globalThis.fontCollectionElement = "";
+} else {
+console.log("error in detecting font collection");
+}}
