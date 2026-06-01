@@ -16,8 +16,8 @@ function googly() {
   document.getElementById("fontSelector").innerHTML = `
   </br><label for="fontCollection">connect fonts from </label><select id="fontCollection" class="input" onchange="fontCollection()">
   <option value="fontGoogly" selected>Google Fonts</option><option value="fontSystem">System Fonts</option></select>
-  <p class="input">Google Fonts is recommended because it offers a wide variety of fonts. however, Google Fonts might not work offline. System Fonts are reliable for offline use, but are much more limited.</p>
-  </br><input id="fontGoogly" class="input" placeholder="enter Google font name" onchange="fontGooglyCheck()"></input>
+  <p class="input" style="text-align: justify;">Google Fonts is recommended because it offers a wide variety of fonts. however, Google Fonts might not work offline. System Fonts are reliable for offline use, but are much more limited.</p>
+  </br><p class="input">name of Google Font: <input id="fontGoogly" class="input" placeholder="LXGW WenKai Mono TC" onchange="fontGooglyCheck()"></input></p>
   <p class="input">remember that Google Fonts is case sensitive: "Oregano" will work, but "oregano" will not work.</p>
   </br><div class="preview" id="fontGooglyPreview">font preview will appear here...</div>
   `;
