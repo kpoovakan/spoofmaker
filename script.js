@@ -3,6 +3,9 @@
 function load() {
 checkJavaScript();
 setColors();
+console.log("checkJavaScript, setColors");
+system();
+console.log("system");
 }
 window.onload = load
 
