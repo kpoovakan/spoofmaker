@@ -1,5 +1,5 @@
 "use strict";
-window.onload = system //change this to googly when ready
+window.onload = system; //change this to googly when ready
 
 function system() {
   document.getElementById("fontSelector").innerHTML = `
