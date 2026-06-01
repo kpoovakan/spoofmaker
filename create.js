@@ -95,3 +95,8 @@ function setButtons() {
 globalThis.buttonText = document.getElementById("buttonText").value;
 globalThis.buttonResult = document.getElementById("videoStyle").value;
 }
+function setFontsGoogle() {
+const root = document.documentElement;
+globalThis.fontName = document.getElementById("fontGoogly").value;
+root.style.setProperty("--font", fontName);
+}
