@@ -33,6 +33,7 @@ function fontGooglyCheck() {
   document.head.innerHTML+= fontGooglyElement;
   var fontGooglyPreview = '<p style="font-family:'+fontGooglyName+';">Everyday, I see the quick brown fox jump over the lazy dog.</p>';
   document.getElementById("fontGooglyPreview").innerHTML= fontGooglyPreview;
+  setFontsGoogle();
 }
 
 function fontCollection() {
