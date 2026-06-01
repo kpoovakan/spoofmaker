@@ -25,15 +25,15 @@ document.getElementById("fontName").innerHTML = `<option value="" disabled selec
 document.getElementById("fontName").innerHTML = `<option value="" disabled selected hidden>select font</option><option value="Comic Sans MS">Comic Sans</option><option value="Brush Script MT">Brush Script MT</option><option value="Lucida Handwriting">Lucida Handwriting</option><option value="Papyrus">Papyrus</option>`;
 } fontPreview(); }
 
-function fontPreview() {
+function fontSystemPreview() {
 if (fontType == "serif") {
-document.getElementById("fontPreview").innerHTML = `<p class="input"><span style="font-family: Times New Roman;">Times New Roman </span><span style="font-family: Georgia;">Georgia </span><span style="font-family: Garamond;">Garamond</span></p>`;
+document.getElementById("fontSystemPreview").innerHTML = `<p class="input"><span style="font-family: Times New Roman;">Times New Roman </span><span style="font-family: Georgia;">Georgia </span><span style="font-family: Garamond;">Garamond</span></p>`;
 } else if (fontType == "sans") {
-document.getElementById("fontPreview").innerHTML = `<p class="input"><span style="font-family: Arial;">Arial </span><span style="font-family: Verdana;">Verdana </span><span style="font-family: Helvetica;">Helvetica</span></p>`;
+document.getElementById("fontSystemPreview").innerHTML = `<p class="input"><span style="font-family: Arial;">Arial </span><span style="font-family: Verdana;">Verdana </span><span style="font-family: Helvetica;">Helvetica</span></p>`;
 } else if (fontType == "monospace") {
-document.getElementById("fontPreview").innerHTML = `<p class="input"><span style="font-family: Courier New;">this is Courier</span></p>`;
+document.getElementById("fontSystemPreview").innerHTML = `<p class="input"><span style="font-family: Courier New;">this is Courier</span></p>`;
 } else if (fontType == "decorative") {
-document.getElementById("fontPreview").innerHTML = `<p class="input><span style="font-family: Comic Sans;">Comic Sans </span><span style="font-family: Brush Script MT;">Brush Script MT </span><span style="font-family: Lucida Handwriting;">Lucida Handwriting </span><span style="font-family: Papyrus;">Papyrus</span></p>`;
+document.getElementById("fontSystemPreview").innerHTML = `<p class="input><span style="font-family: Comic Sans;">Comic Sans </span><span style="font-family: Brush Script MT;">Brush Script MT </span><span style="font-family: Lucida Handwriting;">Lucida Handwriting </span><span style="font-family: Papyrus;">Papyrus</span></p>`;
 }}
 
 function setFonts() {
