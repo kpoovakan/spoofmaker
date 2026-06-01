@@ -3,9 +3,7 @@
 function load() {
 checkJavaScript();
 setColors();
-console.log("checkJavaScript, setColors");
-system();
-console.log("system");
+googly();
 }
 window.onload = load
 
