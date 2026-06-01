@@ -39,8 +39,8 @@ function fontCollection() {
   var selected = document.getElementById("fontCollection").value;
   if (selected == "fontGoogly") {
     googly();
-  else if (selected == "fontSystem") {
+  } else if (selected == "fontSystem") {
     system();
-  else {
+  } else {
     console.log('error in selecting the font "Collection"');
 }}
