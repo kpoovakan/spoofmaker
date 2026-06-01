@@ -24,8 +24,7 @@ globalThis.htmlHeader = "<img src=\""+header+"\" width=\"700px\"/>"
 globalThis.htmlHeader = '<p style="font-size: 31pt;">'+header+'</p>';
 }
 
-globalThis.htmlOne = "<!DOCTYPE html><html><head><title>"+title+"</title><link rel=\"preconnect\" href=\"https://fonts.googleapis.com\"><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
-<link rel=\"shortcut icon\" type=\"image/"+faviconType+"\" href=\""+favicon+"\"><style>";
+globalThis.htmlOne = "<!DOCTYPE html><html><head><title>"+title+"</title><link rel=\"preconnect\" href=\"https://fonts.googleapis.com\"><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin><link rel=\"shortcut icon\" type=\"image/"+faviconType+"\" href=\""+favicon+"\"><style>";
 console.log(htmlOne);
 globalThis.htmlTwo = htmlOne+cssThree+"</style><script>"+jsThree+"</script></head><body>"+htmlHeader+'<p>'+description+'</p>'+'<p id="output"></p><div class="main-footer"><p>Made with <a href="https://kpoovakan.github.io/spoofmaker">Spoof Maker</a>.</p></div></body></html>';
 console.log(htmlTwo);
