@@ -11,20 +11,20 @@ function softWrap() {
 }
 
 function info() {
-  document.getElementById("preview") = `<p>select one of the options above to view the templates for finished Spoofs.</p>`;
+  document.getElementById("viewer") = `<p>select one of the options above to view the templates for finished Spoofs.</p>`;
 }
 
 function v1js() {
-  document.getElementById("preview") = `<iframe id="embed" src="v1.js"></iframe>`;
+  document.getElementById("viewer") = `<iframe id="embed" src="v1.js"></iframe>`;
   softWrap();
 }
 
 function v1css() {
-  document.getElementById("preview") = `<iframe id="embed" src="v1.css"></iframe>`;
+  document.getElementById("viewer") = `<iframe id="embed" src="v1.css"></iframe>`;
   softWrap();
 }
 
 function v2txt() {
-  document.getElementById("preview") = `<iframe id="embed" src="v2.txt"></iframe>`;
+  document.getElementById("viewer") = `<iframe id="embed" src="v2.txt"></iframe>`;
   softWrap();
 }
