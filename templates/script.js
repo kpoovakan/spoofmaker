@@ -11,7 +11,7 @@ function softWrap() {
 }
 
 function info() {
-  document.getElementById("viewer").innerHTML = `<p>select one of the options below to view the templates for finished Spoofs.</p>`;
+  document.getElementById("viewer").innerHTML = `<p>select one of the options above to view the templates for finished Spoofs.</p>`;
 }
 
 function v1js() {
