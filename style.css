@@ -51,6 +51,22 @@ font-family: "LXGW WenKai Mono TC", monospace;
 border: none;
 }
 
+.buttonMain {
+background-color: dimGray;
+color: whiteSmoke;
+display: block;
+margin: 5px;
+font-family: "LXGW WenKai Mono TC", monospace;
+padding: 13px;
+border: 3px solid whiteSmoke;
+}
+
+.buttonMain:hover {
+cursor: pointer;
+background-color: whiteSmoke;
+color: dimGray;
+}
+
 .buttonOne {
 background-color: var(--foreground);
 color: var(--background);
